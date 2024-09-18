@@ -38,8 +38,8 @@
                                     <td><?= $adminItem['name'] ?></td>
                                     <td><?= $adminItem['email'] ?></td>
                                     <td>
-                                        <a href="admin-edit.php" class="btn btn-sm btn-success">Edit</a>
-                                        <a href="admin-delete.php" class="btn btn-sm btn-danger">Delete</a>
+                                        <a href="admin-edit.php?id=<?=$adminItem['id']; ?>" class="btn btn-sm btn-success">Edit</a>
+                                        <a href="admin-delete.php?id=<?=$adminItem['id']; ?>" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to delete this item?');">Delete</a>
                                     </td>
                                 </tr>
                             <?php endforeach; ?>
